@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I'm Sorry, Bhi 💗</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #FFC1DC, #FFE4EF, #FFD1E5);
+    font-family: 'Georgia', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+/* Floating hearts */
+.heart {
+    position: fixed;
+    color: #ff7eae;
+    font-size: 25px;
+    animation: float 5s infinite ease-in-out;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.heart:nth-child(1) {
+    top: 10%;
+    left: 10%;
+}
+
+.heart:nth-child(2) {
+    top: 20%;
+    right: 12%;
+    animation-delay: 1s;
+}
+
+.heart:nth-child(3) {
+    bottom: 15%;
+    left: 15%;
+    animation-delay: 2s;
+}
+
+.heart:nth-child(4) {
+    bottom: 10%;
+    right: 12%;
+    animation-delay: 3s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Letter container */
+.letter {
+    background: #fffafa;
+    max-width: 700px;
+    width: 100%;
+    padding: 45px 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(150, 60, 100, 0.18);
+    border: 2px solid #ffc1dc;
+    position: relative;
+    z-index: 1;
+    animation: appear 1s ease;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.top-heart {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    text-align: center;
+    color: #d66b98;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #b78398;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.message {
+    color: #5e4b53;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: justify;
+}
+
+.message p {
+    margin-bottom: 20px;
+}
+
+.signature {
+    text-align: right;
+    color: #d66b98;
+    font-style: italic;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.bottom-heart {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 25px;
+}
+
+@media (max-width: 600px) {
+    .letter {
+        padding: 30px 22px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .message {
+        font-size: 14px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="heart">♡</div>
+<div class="heart">♥</div>
+<div class="heart">♡</div>
+<div class="heart">♥</div>
+
+<div class="letter">
+
+    <div class="top-heart">💗</div>
+
+    <h1>I'm Sorry, Bhi</h1>
+    <div class="subtitle">A LETTER FROM MY HEART</div>
+
+    <div class="message">
+
+        <p>
+        Hi, bhi. I'm really sorry. Hindi ko talaga intention na matanggal iyon. Alam kong pinaghirapan mong ingatan at alagaan iyon, and I understand kung gaano iyon kahalaga sa'yo. I know na malaking bagay iyon, especially because it helps you build your confidence.
+        </p>
+
+        <p>
+        I know na hindi basta-basta mabubura ng simpleng sorry ko yung disappointment at galit na nararamdaman mo sa akin. Pero I sincerely hope na kahit papaano, maibsan nito yung bigat ng nararamdaman mo.
+        </p>
+
+        <p>
+        I'm not saying sorry just to make things okay or para matapos na yung galit mo sa akin. I'm saying sorry because I genuinely regret what happened, and I know na nagkamali ako. Hindi talaga ako mapakali knowing na nasaktan at na-disappoint kita, lalo na kapag nakikita kong umiiyak ka dahil sa nangyari.
+        </p>
+
+        <p>
+        I understand if you need time and if hindi mo pa ako kayang patawarin ngayon. I won't rush you or force you to accept my apology. I respect whatever you're feeling right now because I know I have no right to demand immediate forgiveness.
+        </p>
+
+        <p>
+        I also know na hindi sapat ang mga salita para maitama yung nagawa ko. Kaya I want to show through my actions na sincere ako sa paghingi ng tawad. I'll be more careful and mindful next time because I don't want something like this to happen again.
+        </p>
+
+        <p>
+        I know I can't undo what happened, but I hope you'll give me the chance to make things right in time. I never intended to hurt you, and I hope someday, when you're ready, you can forgive me.
+        </p>
+
+        <p>
+        Again, I'm genuinely sorry, bhi.
+        </p>
+
+    </div>
+
+    <div class="signature">
+        With sincere apologies, 💗
+    </div>
+
+    <div class="bottom-heart">
+        ♡
+    </div>
+
+</div>
+
+</body>
+</html>
